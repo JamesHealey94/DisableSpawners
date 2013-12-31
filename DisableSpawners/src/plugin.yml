@@ -3,4 +3,15 @@ website: https://github.com/JamesHealey94
 
 name: DisableSpawners
 main: com.gmail.jameshealey1994.disablespawners.DisableSpawners
-version: 1.0
+version: 2.0
+
+commands:
+   disablespawners:
+      description: Reload the config.
+      usage: /<command>
+      permission: disablespawners.reload
+
+permissions:
+    disablespawners.reload:
+        description: Allows you to reload the config
+        default: op
