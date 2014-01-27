@@ -3,15 +3,20 @@ website: https://github.com/JamesHealey94
 
 name: DisableSpawners
 main: com.gmail.jameshealey1994.disablespawners.DisableSpawners
-version: 2.0
+version: 2.1
 
 commands:
    disablespawners:
-      description: Reload the config.
-      usage: /<command>
-      permission: disablespawners.reload
+      description: Reloads or adds/removes a world to/from the config.
+      usage: /<command> reload|addworld|removeworld
 
 permissions:
     disablespawners.reload:
         description: Allows you to reload the config
+        default: op
+    disablespawners.addworld:
+        description: Allows you to add a world to the config
+        default: op
+    disablespawners.removeworld:
+        description: Allows you to remove a world from the config
         default: op
